@@ -5,7 +5,7 @@ FROM eclipse-temurin:21-jdk-alpine
 WORKDIR /app
 
 # Copy the Maven/Gradle-built jar into the container
-COPY target/car-rental-system-1.0.0.jar app.jar
+COPY target/*.jar app.jar
 
 # Expose the port your app runs on
 EXPOSE 8080
